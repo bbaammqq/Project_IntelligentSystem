@@ -175,49 +175,9 @@ st.markdown("""
     <br><br>
 """, unsafe_allow_html=True)
 
-st.write("### การ Train ข้อมูล") 
+st.write("### แหล่งที่มาข้อมูล") 
 st.markdown("""
-    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 10px; font-family: monospace;">
-        def train_and_evaluate(model, name): <br>
-                model.fit(X_train, y_train)<br>
-                y_pred = model.predict(X_test)<br>
-                mae = mean_absolute_error(y_test, y_pred)<br>
-                mse = mean_squared_error(y_test, y_pred)<br>
-                r2 = r2_score(y_test, y_pred)
-    </div>
-    <br>
-        - สร้างฟังก์ชัน train_and_evaluate() เพื่อฝึกโมเดลและประเมินผลโมเดล คือ LinearRegression และ RandomForestRegressor<br>
-        - model.predict(X_test): ใช้โมเดลที่ฝึกเสร็จแล้วเพื่อทำนายผลลัพธ์จากชุดทดสอบ (test data)<br>
-        - mean_absolute_error(y_test, y_pred): คำนวณ Mean Absolute Error (MAE) ซึ่งคือค่าเฉลี่ยของค่าความผิดพลาดแบบสัมบูรณ์ (absolute error)<br>
-        - mean_squared_error(y_test, y_pred): คำนวณ Mean Squared Error (MSE) ซึ่งคือค่าเฉลี่ยของค่าความผิดพลาดกำลังสอง (squared error)<br>
-        - r2_score(y_test, y_pred): คำนวณ R² Score ซึ่งวัดประสิทธิภาพของโมเดล (ค่าที่ใกล้ 1 แสดงว่าโมเดลมีความแม่นยำสูง) <br>   
-    <br><br>
-            
-    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 10px; font-family: monospace;">
-        print(f"ผลลัพธ์ของโมเดล {name}:")<br>
-        print(f"MAE: {mae:.2f}")<br>
-        print(f"MSE: {mse:.2f}")<br>
-        print(f"R² Score: {r2:.2f}")<br>
-        print("-" * 40)
-    </div>
-    <br>
-        - print(): พิมพ์ผลลัพธ์ของการประเมินผล: <br>
-        - name: แสดงชื่อของโมเดลที่กำลังประเมินผล <br>
-    <br><br>
-            
-    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 10px; font-family: monospace;">
-        lr_model = LinearRegression()<br>
-        train_and_evaluate(lr_model, "Linear Regression")
-    </div>
-    <br>
-        การสร้างและทดสอบโมเดล Linear Regression
-    <br><br>
-            
-    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 10px; font-family: monospace;">
-        rf_model = RandomForestRegressor(n_estimators=100, max_depth=10, random_state=42)<br>
-        train_and_evaluate(rf_model, "Random Forest")
-    </div>
-    <br>
-        การสร้างและทดสอบโมเดล Random Forest
-    <br><br>
+    - dataset : https://www.kaggle.com/datasets/yasserh/housing-prices-dataset
 """, unsafe_allow_html=True)
+
+
