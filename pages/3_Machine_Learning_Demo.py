@@ -21,7 +21,7 @@ feature_columns = sample_data.columns
 
 # ตั้งค่าหน้า
 st.set_page_config(
-    page_title="🏡 House Price Prediction",
+    page_title="🏡 House Price Prediction 🪴",
     page_icon="🏠",
     layout="wide"
 )
