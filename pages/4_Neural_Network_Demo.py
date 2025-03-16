@@ -10,7 +10,13 @@ model = tf.keras.models.load_model("weather_classification_model.h5")
 labels = ["dew", "fogsmog", "frost", "glaze", "hail", "lightning", "rain", "rainbow", "rime", "sandstorm", "snow"]
 
 # ตั้งค่าหน้าเว็บ
-st.title("🌤️ Weather Classification App")
+
+st.set_page_config(
+    page_title="🌤️ Weather Forecast ⛈️",
+    page_icon="🌤️",
+    layout="wide"
+)
+
 st.write("อัปโหลดรูปภาพเพื่อทำนายสภาพอากาศ")
 
 # อัปโหลดรูปภาพ
