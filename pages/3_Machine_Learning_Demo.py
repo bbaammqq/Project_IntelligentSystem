@@ -3,6 +3,15 @@ import joblib
 import pandas as pd
 import numpy as np
 
+import os
+
+# ดู path ปัจจุบันที่ Streamlit กำลังทำงานอยู่
+print("Current working directory:", os.getcwd())
+
+# ดูไฟล์ทั้งหมดที่อยู่ในโฟลเดอร์ปัจจุบัน
+print("Files in current directory:", os.listdir(os.getcwd()))
+
+
 # โหลดโมเดลที่บันทึกไว้
 lr_model = joblib.load("linear_regression.pkl")
 rf_model = joblib.load("random_forest.pkl")
