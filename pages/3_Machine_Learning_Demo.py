@@ -67,7 +67,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🏡 House Price Prediction")
+st.title("🏡 House Price Prediction 🪴")
 
 # ส่วนเลือกโมเดล
 st.markdown('<p class="header">Select the model you want to use.    เลือกโมเดลที่ต้องการใช้:</p>', unsafe_allow_html=True)
