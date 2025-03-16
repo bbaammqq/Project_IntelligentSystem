@@ -315,3 +315,8 @@ st.markdown("""
         ดูค่าความแม่นยำของโมเดลใน Training Set และ Validation Set จากนั้นแสดงความแม่นยำ
     <br><br>
 """, unsafe_allow_html=True)
+
+st.write("### แหล่งที่มาข้อมูล") 
+st.markdown("""
+    - dataset : https://www.kaggle.com/datasets/jehanbhathena/weather-dataset
+""", unsafe_allow_html=True)
